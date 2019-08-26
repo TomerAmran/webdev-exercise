@@ -70,35 +70,49 @@ body {
     text-align: center; /* this line makes the boxes centered*/
 }
 
-.main .box {
+.main .message {
     background-color: #f1dce1;
     /*border: 1px solid black;*/
     width: 70%;
     height: 60px;
     margin: 5px auto;
     border-radius: 4px;
-    padding: 4px;
+    padding: 5px;
+    position: relative;
 }
 
-.main .box .subject {
+.main .message .subject {
+    position: absolute;
     font-family: Arial;
     font-size: xx-large;
-    float: left;
 }
-.main .box .from {
-    font-weight: bold;
-    float: left;
+/*.main .message .from {*/
+/*    position: relative;*/
+/*    font-weight: bold;*/
+/*    float: left;*/
+/*}*/
+.main .message .sender {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    font-family: Arial;
 }
-.main .box .sender {
-
-}
-.main .box .content {
+.main .message .content {
     width: 70%;
-    float: right;
+    /*float: right;*/
     border-left-style: solid;
     border-width: thin;
-    height: 90%;
+    height: 50px;
     text-align: left;
+    padding: 5px;
+    position: absolute;
+    left: 200px;
+    top:5px;
 
+}
+.main .message img {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
 }
 
