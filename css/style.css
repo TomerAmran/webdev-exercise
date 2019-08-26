@@ -27,7 +27,7 @@ body {
 .sidenav {
     height: 100%;
     width: 15%;
-    background-color: #314f4f;
+    background-color: #202423;
     position: fixed;
     top: 50px;
     left: 0;
@@ -43,10 +43,7 @@ body {
     color: white;
     text-align: left;
     width: 90%;
-    /*margin-right: auto;*/
-    margin-left: auto;
-    margin-top: 2px;
-    margin-bottom: 2px;
+    margin: 2px auto;
     border-radius: 4px;
     padding: 10px;
 }
@@ -57,12 +54,12 @@ body {
 
 }
 
-#selected {
+.sidenav .selected button {
     background-color: #ee8903;
 }
 
 .main {
-    background-color: #a9a9a9;
+    background-color: #50504e;
     margin-top: 50px;
     margin-left: 15%;
     height: 100%;
@@ -74,8 +71,34 @@ body {
 }
 
 .main .box {
-    border: 1px solid black;
-    width: 50%;
+    background-color: #f1dce1;
+    /*border: 1px solid black;*/
+    width: 70%;
     height: 60px;
     margin: 5px auto;
+    border-radius: 4px;
+    padding: 4px;
 }
+
+.main .box .subject {
+    font-family: Arial;
+    font-size: xx-large;
+    float: left;
+}
+.main .box .from {
+    font-weight: bold;
+    float: left;
+}
+.main .box .sender {
+
+}
+.main .box .content {
+    width: 70%;
+    float: right;
+    border-left-style: solid;
+    border-width: thin;
+    height: 90%;
+    text-align: left;
+
+}
+
